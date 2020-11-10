@@ -1,0 +1,55 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    
+}
+
+ul{
+    list-style-type: none;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 4rem;
+}
+
+.navBut{
+    display: flex;
+}
+
+.navBut li{
+    margin-right: 2.5rem;
+}
+
+.navName{
+    margin-left: 2.5rem;
+}
+
+.title{
+    background-color: rebeccapurple;
+    height: 100vh;
+}
+
+@media screen and (max-width: 1300px){
+    nav{
+        justify-content: space-between;
+    }
+
+
+}
