@@ -1,0 +1,39 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+body{
+  font-family: sans-serif;
+}
+
+nav a{
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover{
+  text-decoration: none;
+  color: black;
+}
+
+nav li{
+  list-style: none;
+}
+
+nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navButs{
+  display: flex;
+  align-items: center;
+}
+
+.navTitle{
+  font-size: 25px;
+}
+
+
