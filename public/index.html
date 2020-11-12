@@ -4,36 +4,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <title>Maximilian Schmid - Bewerbung</title>
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <title>Awesome Apps</title>
 </head>
 
 <body>
-  <div class="header">
+  <div class="main">
     <nav>
-      <h3><a href="./index.html" class="navName">Maximilian Schmid</a></h3>
-      <ul class="navBut">
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Portfolio</a></li>
-        <li><a href="">Contact</a></li>
+      <h2 class="navTitle"><a href="./index.html">Awesome Apps</a></h2>
+      <ul class="navbar">
+        <li class="navBut"><a href="./index.html">Home</a></li>
+        <li class="navBut"><a href="./contact.html">Contact</a></li>
+        <li class="navBut"><a href="./about.html">About</a></li>
       </ul>
     </nav>
-    <div class="title">
-
+    <div class="filler"></div>
+    <div class="subject">
+      <div class="blur">
+        <video autoplay muted loop id="myVideo">
+          <source src="./Assets/4k background footage Ae plugin plexus (1).mp4" type="video/mp4">
+        </video>
+    </div>
+      <p class="subjectContext" id="element"></p>
+      <p class="subjectContextText">The latest Tech Apps in the World. Developed by Awesome Apps.</p>
     </div>
   </div>
-  <div class="container">
-
+  <div class="contentTitle">
+    <div class="line"></div>
+    <h3>Home</h3>
+  </div>
+   <div class="container">
+    <div data-aos="fade-right" class="content">
+      <p>Our latest Product. The Iphone 12. A new way of looking at Technologie. 
+        Even though this isn't actually an App. We for some reason still made it.
+        It contains the latest technologies on the Market. With the new Quad-cell Camera system,
+        you will for sure be able to finally take a picture that looks reasonable.
+        The Iphone 12 features the new Triple-quad Ender Processing Chip developed by Awesome Apps and performing at levels that no other Product can match.
+      </p>
+      <br>
+      <p>The Iphone 12 looks back to the legendary Iphone 5 with its refined angular design. <br>
+        Why did we change the design? <br>
+        Well because we didn't know what else to do and our Products can't be the same as they have been for the last decade.
+      </p><br>
+      <p>
+        Do you want to buy your very own Iphone 12? With the Button below ,that hasn't been styled properly because we had to spend most of our developement time of this Website on this crap text that you're reading, you can purchase your very own overpriced Iphone that doesnt do much more than the last one.
+      </p><br><br>
+      <a class="email" href="https://www.apple.com/iphone-12-pro/">Shop</a>
+    </div>
+    <div data-aos="fade-up" class="pic">
+    </div>
   </div>
 
-
-
-  <!-- Scripts -->
-  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-firestore.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+  <!--Scripts-->
+  <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
   <script src="./main.js"></script>
+
 </body>
 
 </html>
