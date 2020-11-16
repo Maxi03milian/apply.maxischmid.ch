@@ -3,37 +3,147 @@
   margin: 0px;
 }
 
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
 body{
   font-family: sans-serif;
+  min-height: 100vh;
 }
 
 nav a{
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 nav a:hover{
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 nav li{
   list-style: none;
 }
 
-nav{
-  width: 100%;
-  display: flex;
-  align-items: center;
+ul{
+  margin: 0px;
 }
 
-.navButs{
+nav{
+  width: 100%;
+  position: fixed;
+  min-height: 60px;
+  background: transparent;
+}
+
+nav .container{
+  width: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  min-height: 60px;
+}
+
+li{
+  margin: 0px 10px;
 }
 
 .navTitle{
   font-size: 25px;
 }
+
+.navButs{
+  display: flex;
+}
+
+.introduction{
+  background-image: url(./assets/forest.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.introductionTitle{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 60px;
+  width: 100%;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  
+}
+.titleText{
+  color: white;
+  font-family: sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  width: 100%;
+  height: 5rem;
+  opacity: 1;
+}
+
+.titleTextSmall{
+  color: white;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: -30px;
+  width: 100%;
+  height: 5rem;
+  opacity: 1;
+}
+
+.titleBot{
+  font-size: 2rem;
+  bottom: 0;
+}
+
+
+@media (min-width: 576px) {
+  .container, .container-sm {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container, .container-sm, .container-md {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container, .container-sm, .container-md, .container-lg {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1140px;
+  }
+}
+
+
 
 

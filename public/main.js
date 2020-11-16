@@ -1,16 +1,13 @@
-AOS.init()
-
 
 new TypeIt("#element", {
   speed: 75,
   loop: true
 })
-  .type("The Technology of the Future.")
+  .type("I'm Maximilian Schmid")
   .pause(1000)
-  .delete(7)
+  .delete(17)
   .pause(1000)
-  .type("Past.")
+  .type("a Developer")
   .pause(1000)
   .go();
   
-
