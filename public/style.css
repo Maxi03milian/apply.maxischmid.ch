@@ -146,13 +146,63 @@ li{
   margin-top: 25px;
 }
 
+.aboutIntro{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 33% 33% 33%;
+  grid-column-gap: 2rem;
+}
+
 .profilePic{
   background-image: url(./assets/me.jpg);
-  width: 40%;
   height: 30rem;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.section.about{
+  font-family: 'Raleway', sans-serif;
+}
+
+.section.about .icon {
+  font-size: 50px;
+  color: #00B16A;
+  margin-bottom: 5px;
+}
+
+.section.about h6 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.section.about .item{
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 100%;
+  font-family: 'Raleway', sans-serif;
+  background: #fff;
+  text-align: center;
+  padding: 15px 15px;
+  height: 110px;
+  -webkit-box-shadow: 0px 4px 10px 0px #00000025;
+  box-shadow: 0px 4px 10px 0px #00000025;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.itemIcon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemText{
+  text-align: left;
+}
+
+.itemText p{
+  margin-top: 1rem;
 }
 
 @media (min-width: 576px) {
