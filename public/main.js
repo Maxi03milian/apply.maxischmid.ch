@@ -10,4 +10,6 @@ new TypeIt("#element", {
   .type("a Developer")
   .pause(1000)
   .go();
+
+  
   
