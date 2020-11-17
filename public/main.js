@@ -13,3 +13,7 @@ new TypeIt("#element", {
 
   
   
+$(function(){
+  $.scrollIt();
+});
+  

@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scrollit@1.0.5/scrollIt.js" type="text/javascript"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"></link>
@@ -16,22 +18,22 @@
       <div class="container">
         <a href=""class="navTitle">Max Schmid</a>
         <ul class="navButs">
-          <li><a href="" class="navBut">Home</a></li>
-          <li><a href="" class="navBut">About</a></li>
-          <li><a href="" class="navBut">Portfolio</a></li>
-          <li><a href="" class="navBut">Contact</a></li>
+          <li><a data-scroll-nav="0" href="" class="navBut">Home</a></li>
+          <li><a data-scroll-nav="1" href="" class="navBut">About</a></li>
+          <li><a data-scroll-nav="2" href="" class="navBut">Portfolio</a></li>
+          <li><a data-scroll-nav="3" href="" class="navBut">Contact</a></li>
         </ul>
       </div>
     </nav>
   </header>
-  <div class="introduction">
+  <div data-scroll-index="0" class="introduction">
     <div class="introductionTitle">
       <p class="introductionTitleTextSmall">Hello there!</p>
       <p class="introductionTitleText"id="element"></p>
     </div>
   </div>
   <main class="container">
-    <section class="section about" data-scroll-index="1">
+    <section data-scroll-index="1" class="section about">
       <div class="heading">
         <h1>About me</h1>
         <h2>Everything about me</h2>
@@ -49,7 +51,6 @@
                 <h6>Personal</h6> 
                 <p>Hi! My name is Max Schmid. I am a currently learning to programm in HTML and CSS. Feel free to contact me or follow me and my work :)</p>
               </div>
-
             </div>
             <div class="item" id="interests">
               <div class="itemIcon">
@@ -101,7 +102,7 @@
         </div>
       </div>
     </section>
-    <section class="section about" data-scroll-index="1">
+    <section class="section about" data-scroll-index="2">
       <div class="heading">
         <h1>Portfolio</h1>
         <h2>Swisscom Projects</h2>

@@ -236,32 +236,44 @@ li{
 
 .frontend{
   width: 30%;
+  animation: anim 2s;
 }
 
 .backend{
   width: 2%;
+  animation: anim 2s;
 }
 
 .design{
   width: 40%;
+  animation: anim 2s;
 }
 
 .html{
-  width: 75%;
+  width: 50%;
+  animation: anim 2s;
 }
 
 .javascript{
   width: 20%;
+  animation: anim 2s;
 }
 
 .c{
   width: 20%;
+  animation: anim 2s;
 }
 
 .java{
   width: 5%;
+  animation: anim 2s;
 }
 
+@keyframes anim{
+  0%{
+    width: 0%;
+  }
+}
 
 
 
