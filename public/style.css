@@ -206,13 +206,11 @@ li{
 }
 
 .aboutSkills{
-  height: 20rem;
-  padding: 1rem 2rem;
+  padding-top: 1rem;
   list-style: none;
   display: grid;
   grid-template-columns: auto auto;
   grid-column-gap: 2rem;
-  border: black 1px solid;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -224,14 +222,14 @@ li{
   background: #a7adab;
   width: 90%;
   display: block;
-  height: 2px;
+  height: 3px;
   border: 1px solid rgb(212, 236, 212);
   border-radius: 3;
   overflow: hidden;
 }
 
 .bar span{
-  height: 2px;
+  height: 3px;
   float: left;
   background-color: #00B16A;
 }
@@ -246,6 +244,22 @@ li{
 
 .design{
   width: 40%;
+}
+
+.html{
+  width: 75%;
+}
+
+.javascript{
+  width: 20%;
+}
+
+.c{
+  width: 20%;
+}
+
+.java{
+  width: 5%;
 }
 
 
