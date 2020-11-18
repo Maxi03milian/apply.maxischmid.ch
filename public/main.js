@@ -43,3 +43,16 @@ winUI.on("scroll", function () {
     title.removeClass("but-scrolling");
   }
 })
+
+$(".portfolioCard").hover(function(){
+  if ($(this).hasClass("active")){
+    $(".portfolioCard .cardBottom").slideUp(function() {
+      $(".portfolioCard").removeClass("active");
+    });
+  }else{
+    $(".portfolioCard").addClass("active");
+    $(".portfolioCard .cardBottom").stop().slideDown();
+  }
+})
+
+

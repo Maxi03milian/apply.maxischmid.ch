@@ -138,6 +138,7 @@ nav .active{
 
 .section {
   padding: 100px 0 10px 0;
+  font-family: 'Raleway', sans-serif;
 }
 
 .heading::before {
@@ -322,7 +323,79 @@ nav .active{
   }
 }
 
+/*Porfolio Cards*/
 
+
+.portfolio{
+  height: 40rem;
+}
+.portfolioContent{
+  display: flex;
+  justify-content: center;
+
+}
+.portfolioCard{
+  position: absolute;
+  height: 470px;
+  width: 340px;
+  display: block;
+  background: white;
+  -webkit-box-shadow: 0px 4px 10px 0px #00000025;
+  box-shadow: 0px 4px 10px 0px #00000025;
+  transition: all 0.4s linear;
+}
+
+.portfolioCard .image{
+  background: black;
+  height: 400px;
+  overflow: hidden;
+}
+
+.image img{
+  height: 100%;
+  width: 100%;
+  transition: all 0.5s ;
+}
+
+.portfolioCard:hover .image img{
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
+.portfolioCard .cardContent{
+  position: absolute;
+  bottom: 0px;
+  background: white;
+  width: 100%;
+  text-align: center;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.cardContent .cardTitle{
+  font-size: 24px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.cardContent .cardSubTitle{
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #00B16A;
+}
+
+.cardBottom p{
+  padding: 0px 20px;
+  color: #666666;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.8em;
+}
+
+.cardBottom{
+  display: none;
+}
 
 
 
