@@ -14,6 +14,32 @@ new TypeIt("#element", {
   
   
 $(function(){
-  $.scrollIt();
+  $.scrollIt({
+    upKey: 38,
+    downKey: 40,
+    easing: 'linear',
+    scrollTime: 600,
+    activeClass: 'active',
+    onPageChange: null,
+    topOffset: 0,
+    margin: 5
+  });
 });
   
+
+var winUI = $(window);
+winUI.on("scroll", function () {
+  var bodyScroll = winUI.scrollTop(),
+  nav = $("nav");
+  but = $(".navBut");
+  title = $(".navTitle");
+  if(bodyScroll > winUI.innerHeight()-65) {
+    nav.addClass("nav-scrolling");
+    but.addClass("but-scrolling");
+    title.addClass("but-scrolling");
+  } else {
+    nav.removeClass("nav-scrolling");
+    but.removeClass("but-scrolling");
+    title.removeClass("but-scrolling");
+  }
+})
