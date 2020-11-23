@@ -186,6 +186,8 @@ nav .active{
 
 .section.about{
   font-family: 'Raleway', sans-serif;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .section.about .icon {
@@ -397,13 +399,20 @@ nav .active{
   display: none;
 }
 
+.section.contact .heading > *{
+  color: #fff;
+}
+
 .contactBack{
   background: url(./assets/background.webp);
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-  margin-top: 50px;
   min-height: 90vh;
+}
+
+.aboutSkillsDark .heading{
+  padding-top: 100px;
 }
 
 
