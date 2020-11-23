@@ -90,7 +90,7 @@ nav .active{
 }
 
 .introduction{
-  background-image: url(./assets/forest.jpg);
+  background-image: url(./assets/overnature.net-863.jpg);
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
@@ -397,6 +397,14 @@ nav .active{
   display: none;
 }
 
+.contactBack{
+  background: url(./assets/background.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  margin-top: 50px;
+  min-height: 90vh;
+}
 
 
 

@@ -21,8 +21,7 @@ $(function(){
     scrollTime: 600,
     activeClass: 'active',
     onPageChange: null,
-    topOffset: 0,
-    margin: 5
+    topOffset: 0
   });
 });
   
