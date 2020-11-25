@@ -415,6 +415,49 @@ nav .active{
   padding-top: 100px;
 }
 
+/*Contact*/
+
+.contactContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactContent form{
+  width: calc(100% - 200px);
+}
+
+.contactContent form input{
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  border: none;
+  text-decoration: none;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  padding-left: 10px;
+  color: white;
+}
+
+.name{
+  margin-right: 10px;
+}
+
+.email{
+  margin-left: 10px;
+}
+
+.contactName{
+  display: flex;
+  justify-content: center;
+
+}
+
+.contactSubject{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 
 @media (min-width: 576px) {
