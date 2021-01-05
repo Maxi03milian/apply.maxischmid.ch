@@ -449,6 +449,7 @@ nav .active{
 .contactName{
   display: flex;
   justify-content: center;
+  width: 100%;
 
 }
 
