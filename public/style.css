@@ -421,6 +421,7 @@ nav .active{
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 .contactContent form{
   width: calc(100% - 200px);
@@ -428,7 +429,23 @@ nav .active{
 
 .contactContent form input{
   width: 100%;
-  height: 50px;
+  height: 60px;
+  background-color: black;
+  border: none;
+  text-decoration: none;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  padding-left: 10px;
+  color: white;
+}
+
+.contactContent form textarea{
+  font-family: sans-serif;
+  width: 100%;
+  height: 160px;
+  min-height: 160px;
+  max-height: 300px;
+  resize: vertical;
   background-color: black;
   border: none;
   text-decoration: none;
