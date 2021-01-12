@@ -419,8 +419,7 @@ nav .active{
 
 .contactContent{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   width: 100%;
 }
 .contactContent form{
@@ -430,13 +429,17 @@ nav .active{
 .contactContent form input{
   width: 100%;
   height: 60px;
+  padding-left: 10px;
   background-color: black;
   border: none;
   text-decoration: none;
   margin-bottom: 25px;
   border-radius: 5px;
-  padding-left: 10px;
   color: white;
+}
+
+.subject{
+  width: 50px
 }
 
 .contactContent form textarea{
@@ -451,7 +454,6 @@ nav .active{
   text-decoration: none;
   margin-bottom: 25px;
   border-radius: 5px;
-  padding-left: 10px;
   color: white;
 }
 
@@ -475,6 +477,11 @@ nav .active{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.contactBut{
+  display: flex;
+  justify-content: center;
 }
 
 
