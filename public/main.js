@@ -11,9 +11,9 @@ new TypeIt("#element", {
   .pause(1000)
   .go();
 
-  
-  
-$(function(){
+
+
+$(function () {
   $.scrollIt({
     upKey: 38,
     downKey: 40,
@@ -24,15 +24,15 @@ $(function(){
     topOffset: 0
   });
 });
-  
+
 
 var winUI = $(window);
 winUI.on("scroll", function () {
   var bodyScroll = winUI.scrollTop(),
-  nav = $("nav");
+    nav = $("nav");
   but = $(".navBut");
   title = $(".navTitle");
-  if(bodyScroll > winUI.innerHeight()-65) {
+  if (bodyScroll > winUI.innerHeight() - 65) {
     nav.addClass("nav-scrolling");
     but.addClass("but-scrolling");
     title.addClass("but-scrolling");
@@ -43,15 +43,17 @@ winUI.on("scroll", function () {
   }
 })
 
-$(".portfolioCard").hover(function(){
-  if ($(this).hasClass("active")){
-    $(".portfolioCard .cardBottom").slideUp(function() {
-      $(".portfolioCard").removeClass("active");
-    });
-  }else{
-    $(".portfolioCard").addClass("active");
-    $(".portfolioCard .cardBottom").stop().slideDown();
-  }
+$(".portfolioCard").mouseenter(function () {
+  $(".portfolioCard").addClass("active");
+  $(".portfolioCard .cardBottom").stop().slideDown();
 })
+
+$(".portfolioCard").mouseleave(function () {
+  $(".portfolioCard .cardBottom").slideUp(function () {
+    $(".portfolioCard").removeClass("active");
+  });
+})
+
+
 
 
