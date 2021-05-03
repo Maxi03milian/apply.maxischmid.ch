@@ -56,4 +56,23 @@ $(".portfolioCard").mouseleave(function () {
 
 
 
+//Listen for form Submit 
+document.getElementById("contactForm").addEventListener("submit", submitForm);
+
+function submitForm(e) {
+  e.preventDefault();
+
+  //get Values
+  let name = getInputVal('name');
+  let email = getInputVal("email");
+  let subject = getInputVal("subject");
+  let message = getInputVal("message");
+
+}
+
+// function to get form values
+
+function getInputVal(id) {
+  return document.getElementById(id).value;
+}
 
