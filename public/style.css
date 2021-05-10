@@ -327,9 +327,13 @@ nav .active{
 
 /*Porfolio Cards*/
 
-
 .portfolio{
   height: 40rem;
+}
+
+.portfolioContent.container{
+display: flex;
+justify-content: space-around;
 }
 .portfolioContent{
   display: flex;
@@ -337,7 +341,7 @@ nav .active{
 
 }
 .portfolioCard{
-  position: absolute;
+  position: relative;
   height: 470px;
   width: 340px;
   display: block;
@@ -370,7 +374,6 @@ nav .active{
   background: white;
   width: 100%;
   text-align: center;
-  padding-right: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
 }

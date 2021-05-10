@@ -43,14 +43,27 @@ winUI.on("scroll", function () {
   }
 })
 
-$(".portfolioCard").mouseenter(function () {
-  $(".portfolioCard").addClass("active");
-  $(".portfolioCard .cardBottom").stop().slideDown();
+//Card1
+$("#portfolioCard1").mouseenter(function () {
+  $("#portfolioCard1").addClass("active");
+  $("#portfolioCard1 .cardBottom").stop().slideDown();
 })
 
-$(".portfolioCard").mouseleave(function () {
-  $(".portfolioCard .cardBottom").slideUp(function () {
-    $(".portfolioCard").removeClass("active");
+$("#portfolioCard1").mouseleave(function () {
+  $("#portfolioCard1 .cardBottom").slideUp(function () {
+    $("#portfolioCard1").removeClass("active");
+  });
+})
+
+
+//Card2
+$("#portfolioCard2").mouseenter(function () {
+  $("#portfolioCard2").addClass("active");
+  $("#portfolioCard2 .cardBottom").stop().slideDown();
+})
+$("#portfolioCard2").mouseleave(function () {
+  $("#portfolioCard2 .cardBottom").slideUp(function () {
+    $("#portfolioCard2").removeClass("active");
   });
 })
 
