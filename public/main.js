@@ -1,19 +1,3 @@
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    var firebaseConfig = {
-      apiKey: "AIzaSyCIrnk0bubF5kZ7DH7seoNBJeHSsSISrzk",
-      authDomain: "apply-maxischmid.firebaseapp.com",
-      databaseURL: "https://apply-maxischmid.firebaseio.com",
-      projectId: "apply-maxischmid",
-      storageBucket: "apply-maxischmid.appspot.com",
-      messagingSenderId: "489119852536",
-      appId: "1:489119852536:web:7456b9b9609d306fd7d80d",
-      measurementId: "G-XZ16ZJJ9MV"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-
-
 
 new TypeIt("#element", {
   speed: 75,
@@ -83,8 +67,7 @@ $("#portfolioCard2").mouseleave(function () {
   });
 })
 
-//Reference messages collection
-let messagesRef = firebase.database().ref("messages")
+
 
 //Listen for form Submit 
 document.getElementById("contactForm").addEventListener("submit", submitForm);
@@ -98,32 +81,11 @@ function submitForm(e) {
   let subject = getInputVal("subject");
   let message = getInputVal("message");
 
-  // Save Message
-  saveMessage(name, email, subject, message);
-
-  //Show Status and clear
-  document.querySelector('.formStatus').style.display = 'block';
-  document.querySelector("#contactForm").reset();
-
-  // Hide alert after 3 seconds
-  setTimeout(function(){
-    document.querySelector('.formStatus').style.display = 'none';
-  }, 3000)
 }
 
 // function to get form values
 
 function getInputVal(id) {
-  return document.getElementById(id).value
+  return document.getElementById(id).value;
 }
 
-//Save message to firebase
-function saveMessage(name, email, subject, message){
-  let newMessageRef = messagesRef.push();
-  newMessageRef.set({
-    name: name,
-    email: email,
-    subject: subject,
-    message: message
-  });
-}

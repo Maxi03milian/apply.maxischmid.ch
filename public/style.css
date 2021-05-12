@@ -241,6 +241,7 @@ nav .active{
 }
 
 .aboutSkillsBack{
+  background: url(./assets/background.webp);
   background-size: cover;
   background-attachment: fixed;
   padding: 40px 0 40px;
@@ -434,7 +435,6 @@ justify-content: space-around;
   padding-left: 10px;
   background-color: black;
   border: none;
-  opacity: 0.8;
   text-decoration: none;
   margin-bottom: 25px;
   border-radius: 5px;
@@ -453,7 +453,6 @@ justify-content: space-around;
   max-height: 300px;
   resize: vertical;
   background-color: black;
-  opacity: 0.8;
   border: none;
   text-decoration: none;
   margin-bottom: 25px;
@@ -486,47 +485,6 @@ justify-content: space-around;
 .contactBut{
   display: flex;
   justify-content: center;
-}
-
-.subBut{
-  display: inline-block;
-  font-weight: 700;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border: 2px solid transparent;
-  font-size: 16px;
-  line-height: 48px;
-  width: 187.1px;
-  color: #0067f4;
-  cursor: pointer;
-  z-index: 5;
-  position: relative;
-  text-transform: uppercase;
-  border-radius: 50px;
-  background: #00000014;
-  border: 2px solid #00B16A;
-  color: #00B16A;
-  outline: none;
-  transition: all 0.25s ease;
-}
-
-.subBut:hover{
-  color: #fff;
-  background: #00B16A;
-}
-
-.formStatus{
-  text-align: center;
-  padding: 10px;
-  background-color: #00B16A;
-  color: white;
-  margin-bottom: 10px;
-  display: none;
 }
 
 
