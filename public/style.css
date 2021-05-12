@@ -423,68 +423,18 @@ justify-content: space-around;
 .contactContent{
   display: flex;
   justify-content: center;
-  width: 100%;
-}
-.contactContent form{
-  width: calc(100% - 200px);
-}
-
-.contactContent form input{
-  width: 100%;
-  height: 60px;
-  padding-left: 10px;
-  background-color: black;
-  border: none;
-  text-decoration: none;
-  margin-bottom: 25px;
-  border-radius: 5px;
-  color: white;
-}
-
-.subject{
-  width: 50px
-}
-
-.contactContent form textarea{
-  font-family: sans-serif;
-  width: 100%;
-  height: 160px;
-  min-height: 160px;
-  max-height: 300px;
-  resize: vertical;
-  background-color: black;
-  border: none;
-  text-decoration: none;
-  margin-bottom: 25px;
-  border-radius: 5px;
-  color: white;
-}
-
-.name{
-  margin-right: 10px;
-}
-
-.email{
-  margin-left: 10px;
-}
-
-.contactName{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-
-}
-
-.contactSubject{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  width: 100%;
+  color: black;
+  flex-direction: column;
+  text-align: center;
 }
 
-.contactBut{
-  display: flex;
-  justify-content: center;
+.contactMe{
+  width: 100%;
+  height: 10rem;
+  background-color: white;
+  opacity: 1;
 }
 
 
