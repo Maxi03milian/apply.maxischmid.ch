@@ -436,6 +436,9 @@ justify-content: space-around;
   color: white;
   opacity: 1;
 }
+.contactMe h1{
+  font-size: 40px;
+}
 
 button{
   font-size: 1.5rem;
@@ -475,6 +478,16 @@ button{
 
 .btn:hover:before {
   left: 100%;
+}
+
+.fa-cog{
+  animation: gearRotation 4s infinite linear;
+
+}
+
+@keyframes gearRotation{
+  from{  transform: rotateZ(0deg)   }
+  to  {  transform: rotateZ(360deg) }
 }
 
 .contactButtons{
