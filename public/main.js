@@ -16,12 +16,13 @@ let downloadButton = $(".btncontainer");
 const docRef = firestore.collection('applications');
 
 var projectId = window.location.pathname.replace('/', '')
-if(projectId == '') projectId = 'undefined'
-
+if(projectId == '') {
+  projectId = 'default';
+}
 docRef.doc(projectId).get().then((doc) => {
   if (doc && doc.exists) {
     downloadButton.css("display", "Block");
-    $(".downloadBut").attr("href", doc.data().src)
+    $(".downloadBut").attr("href", doc.data().src);
   }
 })
 
