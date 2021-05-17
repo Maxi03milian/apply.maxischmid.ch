@@ -532,14 +532,27 @@ button{
   left: 100%;
 }
 
-.fa-cog{
+.gearone{
+  font-size: 40px;
   animation: gearRotation 4s infinite linear;
+  margin-right: -4px;
 
 }
 
 @keyframes gearRotation{
   from{  transform: rotateZ(0deg)   }
   to  {  transform: rotateZ(360deg) }
+}
+
+.gear2{
+  font-size: 40px;
+  animation: gearRotation2 4s infinite linear;
+
+}
+
+@keyframes gearRotation2{
+  from{  transform: rotateZ(390deg)   }
+  to  {  transform: rotateZ(30deg) }
 }
 
 .contactButtons{
