@@ -32,13 +32,18 @@
     </nav>
   </header>
   <div data-scroll-index="0" class="introduction">
+    <div class="aboutSkillsDark"></div>
     <div class="introductionTitle">
       <p class="introductionTitleTextSmall">Hello there!</p>
       <p class="introductionTitleText" id="element"></p>
+      <div class="btncontainer">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="downloadBut">Bewerbung Öffnen</a><br>
+      </div>
+      <a data-scroll-nav="1" class="navBut"> <i class="fas fa-chevron-down"></i></a>
     </div>
   </div>
   <main>
-    <section data-scroll-index="1" class="section about">
+    <section data-scroll-index="1" class="section about"> 
       <div class="heading container">
         <h1>About me</h1>
         <h2>Everything about me</h2>
@@ -182,6 +187,8 @@
   </main>
 
   <!--scripts-->
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-firestore.js"></script>
   <script src="./main.js"></script>
 </body>
 

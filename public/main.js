@@ -1,3 +1,31 @@
+var firebaseConfig = {
+  apiKey: "AIzaSyCIrnk0bubF5kZ7DH7seoNBJeHSsSISrzk",
+  authDomain: "apply-maxischmid.firebaseapp.com",
+  databaseURL: "https://apply-maxischmid.firebaseio.com",
+  projectId: "apply-maxischmid",
+  storageBucket: "apply-maxischmid.appspot.com",
+  messagingSenderId: "489119852536",
+  appId: "1:489119852536:web:7456b9b9609d306fd7d80d",
+  measurementId: "G-XZ16ZJJ9MV"
+};
+firebase.initializeApp(firebaseConfig);
+var firestore = firebase.firestore();
+
+/* Load canditature */
+let downloadButton = $(".btncontainer");
+const docRef = firestore.collection('applications');
+
+var projectId = window.location.pathname.replace('/', '')
+if(projectId == '') projectId = 'undefined'
+
+docRef.doc(projectId).get().then((doc) => {
+  if (doc && doc.exists) {
+    downloadButton.css("display", "Block");
+    $(".downloadBut").attr("href", doc.data().src)
+  }
+})
+
+
 
 new TypeIt("#element", {
   speed: 75,
@@ -66,5 +94,6 @@ $("#portfolioCard2").mouseleave(function () {
     $("#portfolioCard2").removeClass("active");
   });
 })
+
 
 
