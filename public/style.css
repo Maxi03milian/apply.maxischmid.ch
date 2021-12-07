@@ -420,6 +420,10 @@ justify-content: space-around;
   transition: all 0.4s linear;
 }
 
+.portfolioCard p{
+  margin-top: 0px !important;
+}
+
 .comingSoon{
   text-align: center;
   margin-top: 60%;
@@ -577,9 +581,6 @@ button{
 @keyframes gearRotation2{
   from{  transform: rotateZ(390deg)   }
   to  {  transform: rotateZ(30deg) }
-}
-
-.contactButtons{
 }
 
 
