@@ -385,7 +385,7 @@ header .aboutSkillsDark{
   border: 1px solid black;
 }
 
-.timeline p{
+.timelineItem{
   margin-left: -50px;
   margin-top: 210px;
   padding-top: 10px;
