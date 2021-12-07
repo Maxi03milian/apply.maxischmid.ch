@@ -377,9 +377,27 @@ header .aboutSkillsDark{
 }
 
 /*Porfolio Cards*/
+.timeline{
+  position: absolute;
+  left: 50%; 
+  width: 0px;
+  height: 470px;
+  border: 1px solid black;
+}
+
+.timeline p{
+  margin-left: -50px;
+  margin-top: 210px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100px;
+  font-size: 20px;
+  background-color: white;
+}
+
 
 .portfolio{
-  height: 40rem;
+  height: 80rem;
 }
 
 .portfolioContent.container{
@@ -400,6 +418,12 @@ justify-content: space-around;
   -webkit-box-shadow: 0px 4px 10px 0px #00000025;
   box-shadow: 0px 4px 10px 0px #00000025;
   transition: all 0.4s linear;
+}
+
+.portfolioCard p{
+  text-align: center;
+  margin-top: 60%;
+  font-size: 30px;
 }
 
 .portfolioCard .image{

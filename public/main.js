@@ -96,5 +96,16 @@ $("#portfolioCard2").mouseleave(function () {
   });
 })
 
+//Card3
+$("#portfolioCard3").mouseenter(function () {
+  $("#portfolioCard3").addClass("active");
+  $("#portfolioCard3 .cardBottom").stop().slideDown();
+})
+$("#portfolioCard3").mouseleave(function () {
+  $("#portfolioCard3 .cardBottom").slideUp(function () {
+    $("#portfolioCard3").removeClass("active");
+  });
+})
+
 
 
