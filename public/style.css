@@ -508,6 +508,7 @@ justify-content: space-around;
   width: 100%;
   color: black;
   flex-direction: column;
+  gap: 12rem;
   text-align: center;
 }
 
