@@ -108,4 +108,25 @@ $("#portfolioCard3").mouseleave(function () {
 })
 
 
+// Create the observer
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+        entry.target.classList.add('animate__animated', 'animate__fadeInRight');
+    }
+  });
+});
 
+// Tell the observer which elements to track
+observer.observe(document.querySelector('#personal'));
+observer.observe(document.querySelector('#interests'));
+observer.observe(document.querySelector('#projects'));
+
+
+function titleClick(){
+  document.getElementById("element").classList.add('animate__animated', 'animate__shakeX');
+}
+
+document.getElementById("element").addEventListener('animationend', () => {
+  document.getElementById("element").classList.remove('animate__animated', 'animate__shakeX');
+});

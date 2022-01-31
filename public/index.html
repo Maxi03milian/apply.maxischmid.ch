@@ -13,6 +13,10 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   </link>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
   <link rel="stylesheet" href="./style.css">
   <title>Bewerbung</title>
 </head>
@@ -35,7 +39,7 @@
     <div class="aboutSkillsDark"></div>
     <div class="introductionTitle">
       <p class="introductionTitleTextSmall">Hello there!</p>
-      <p class="introductionTitleText" id="element"></p>
+      <p class="introductionTitleText" id="element" onclick="titleClick()"></p>
       <div class="btncontainer">
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="downloadBut">Bewerbung Öffnen</a><br>
       </div>
@@ -43,7 +47,7 @@
     </div>
   </div>
   <main>
-    <section data-scroll-index="1" class="section about"> 
+    <section id="scroll1" data-scroll-index="1" class="section about"> 
       <div class="heading container">
         <h1>About me</h1>
         <h2>Everything about me</h2>
