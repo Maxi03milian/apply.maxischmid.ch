@@ -126,6 +126,10 @@ const observer = new IntersectionObserver(entries => {
         entry.target.classList.add('animate__animated', 'animate__fadeInLeft');
       }
 
+      if (entry.target.classList.contains('skillsLanguages') || entry.target.classList.contains('skillsCoding')) {
+        entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+      }
+
     }
   });
 });
@@ -137,6 +141,8 @@ observer.observe(document.querySelector('#projects'));
 observer.observe(document.querySelector('#timelineID1'));
 observer.observe(document.querySelector('#timelineID2'));
 observer.observe(document.querySelector('#profilePicID'));
+observer.observe(document.querySelector('#skillsCodingID'));
+observer.observe(document.querySelector('#skillsLanguagesID'));
 
 
 
