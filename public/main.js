@@ -130,6 +130,10 @@ const observer = new IntersectionObserver(entries => {
         entry.target.classList.add('animate__animated', 'animate__fadeInUp');
       }
 
+      if (entry.target.classList.contains('contactField')) {
+        entry.target.classList.add('animate__animated', 'animate__flipInY');
+      }
+
     }
   });
 });
@@ -143,6 +147,9 @@ observer.observe(document.querySelector('#timelineID2'));
 observer.observe(document.querySelector('#profilePicID'));
 observer.observe(document.querySelector('#skillsCodingID'));
 observer.observe(document.querySelector('#skillsLanguagesID'));
+observer.observe(document.querySelector('#teamsField'));
+observer.observe(document.querySelector('#outlookField'));
+observer.observe(document.querySelector('#intranetField'));
 
 
 
