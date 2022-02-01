@@ -122,6 +122,10 @@ const observer = new IntersectionObserver(entries => {
         entry.target.classList.add('animate__animated', 'animate__zoomInDown');
       }
 
+      if (entry.target.classList.contains('profilePic')) {
+        entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+      }
+
     }
   });
 });
@@ -132,6 +136,7 @@ observer.observe(document.querySelector('#interests'));
 observer.observe(document.querySelector('#projects'));
 observer.observe(document.querySelector('#timelineID1'));
 observer.observe(document.querySelector('#timelineID2'));
+observer.observe(document.querySelector('#profilePicID'));
 
 
 
