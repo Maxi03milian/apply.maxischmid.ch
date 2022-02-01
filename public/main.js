@@ -133,6 +133,12 @@ const observer = new IntersectionObserver(entries => {
       if (entry.target.classList.contains('contactField')) {
         entry.target.classList.add('animate__animated', 'animate__flipInY', 'animate__delay-1s');
       }
+      if (entry.target.classList.contains('portfolioLeft')) {
+        entry.target.classList.add('animate__animated', 'animate__fadeInLeft');
+      }
+      if (entry.target.classList.contains('portfolioRight')) {
+        entry.target.classList.add('animate__animated', 'animate__fadeInRight');
+      }
 
     }
   });
@@ -150,6 +156,10 @@ observer.observe(document.querySelector('#skillsLanguagesID'));
 observer.observe(document.querySelector('#teamsField'));
 observer.observe(document.querySelector('#outlookField'));
 observer.observe(document.querySelector('#intranetField'));
+observer.observe(document.querySelector('#portfolioCard1'));
+observer.observe(document.querySelector('#portfolioCard2'));
+observer.observe(document.querySelector('#portfolioCard3'));
+observer.observe(document.querySelector('#portfolioCard4'));
 
 
 
