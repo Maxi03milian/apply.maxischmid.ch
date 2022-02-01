@@ -123,7 +123,7 @@ const observer = new IntersectionObserver(entries => {
       }
 
       if (entry.target.classList.contains('profilePic')) {
-        entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+        entry.target.classList.add('animate__animated', 'animate__fadeInLeft');
       }
 
     }
