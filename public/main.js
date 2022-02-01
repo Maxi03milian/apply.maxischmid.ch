@@ -131,9 +131,7 @@ const observer = new IntersectionObserver(entries => {
       }
 
       if (entry.target.classList.contains('contactField')) {
-        setTimeout(function(){
-          entry.target.classList.add('animate__animated', 'animate__flipInY');
-        }, 500); //run this after 3 seconds
+        entry.target.classList.add('animate__animated', 'animate__flipInY', 'animate__delay-1s');
       }
 
     }
