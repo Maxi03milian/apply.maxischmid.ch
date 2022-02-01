@@ -131,7 +131,7 @@ const observer = new IntersectionObserver(entries => {
       }
 
       if (entry.target.classList.contains('contactField')) {
-        entry.target.classList.add('animate__animated', 'animate__flipInY');
+        entry.target.classList.add('animate__animated', 'animate__flipInY', 'animate__delay-1s');
       }
 
     }
