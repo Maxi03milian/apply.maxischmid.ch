@@ -16,7 +16,7 @@ let downloadButton = $(".btncontainer");
 const docRef = firestore.collection('applications');
 
 var projectId = window.location.pathname.replace('/', '')
-if(projectId == '') {
+if (projectId == '') {
   projectId = 'default';
 }
 docRef.doc(projectId).get().then((doc) => {
@@ -32,6 +32,7 @@ new TypeIt("#element", {
   speed: 75,
   loop: true
 })
+  .type("               ")
   .type("I'm Maximilian Schmid")
   .pause(1000)
   .delete(17)
@@ -108,11 +109,19 @@ $("#portfolioCard3").mouseleave(function () {
 })
 
 
-// Create the observer
+// Observer for Cards
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
+
+      if (entry.target.classList.contains('item')) {
         entry.target.classList.add('animate__animated', 'animate__fadeInRight');
+      }
+
+      if (entry.target.classList.contains('timeline')) {
+        entry.target.classList.add('animate__animated', 'animate__zoomInDown');
+      }
+
     }
   });
 });
@@ -121,12 +130,16 @@ const observer = new IntersectionObserver(entries => {
 observer.observe(document.querySelector('#personal'));
 observer.observe(document.querySelector('#interests'));
 observer.observe(document.querySelector('#projects'));
+observer.observe(document.querySelector('#timelineID1'));
+observer.observe(document.querySelector('#timelineID2'));
 
 
-function titleClick(){
+
+function titleClick() {
   document.getElementById("element").classList.add('animate__animated', 'animate__shakeX');
 }
 
 document.getElementById("element").addEventListener('animationend', () => {
   document.getElementById("element").classList.remove('animate__animated', 'animate__shakeX');
+
 });
