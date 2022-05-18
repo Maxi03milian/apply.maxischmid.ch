@@ -133,6 +133,9 @@ const observer = new IntersectionObserver(entries => {
       if (entry.target.classList.contains('contactField')) {
         entry.target.classList.add('animate__animated', 'animate__flipInY', 'animate__delay-1s');
       }
+      if (entry.target.classList.contains('contactFieldSmall')) {
+        entry.target.classList.add('animate__animated', 'animate__flipInY', 'animate__delay-1s');
+      }
       if (entry.target.classList.contains('portfolioLeft')) {
         entry.target.classList.add('animate__animated', 'animate__fadeInLeft');
       }
@@ -160,6 +163,10 @@ observer.observe(document.querySelector('#portfolioCard1'));
 observer.observe(document.querySelector('#portfolioCard2'));
 observer.observe(document.querySelector('#portfolioCard3'));
 observer.observe(document.querySelector('#portfolioCard4'));
+observer.observe(document.querySelector('#githubField'));
+observer.observe(document.querySelector('#discordField'));
+observer.observe(document.querySelector('#instaField'));
+observer.observe(document.querySelector('#linkedinField'));
 
 
 
