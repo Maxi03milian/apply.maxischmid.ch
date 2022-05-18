@@ -108,6 +108,17 @@ $("#portfolioCard3").mouseleave(function () {
   });
 })
 
+//Card3
+$("#portfolioCard4").mouseenter(function () {
+  $("#portfolioCard4").addClass("active");
+  $("#portfolioCard4 .cardBottom").stop().slideDown();
+})
+$("#portfolioCard4").mouseleave(function () {
+  $("#portfolioCard4 .cardBottom").slideUp(function () {
+    $("#portfolioCard4").removeClass("active");
+  });
+})
+
 
 // Observer for Cards
 const observer = new IntersectionObserver(entries => {
