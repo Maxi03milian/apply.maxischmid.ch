@@ -108,7 +108,7 @@ $("#portfolioCard3").mouseleave(function () {
   });
 })
 
-//Card3
+//Card4
 $("#portfolioCard4").mouseenter(function () {
   $("#portfolioCard4").addClass("active");
   $("#portfolioCard4 .cardBottom").stop().slideDown();
