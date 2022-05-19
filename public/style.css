@@ -344,12 +344,12 @@ header .aboutSkillsDark{
 }
 
 .frontend{
-  width: 30%;
+  width: 45%;
   animation: anim 2s;
 }
 
 .backend{
-  width: 2%;
+  width: 20%;
   animation: anim 2s;
 }
 
@@ -364,7 +364,7 @@ header .aboutSkillsDark{
 }
 
 .javascript{
-  width: 30%;
+  width: 40%;
   animation: anim 2s;
 }
 
@@ -374,7 +374,7 @@ header .aboutSkillsDark{
 }
 
 .java{
-  width: 5%;
+  width: 10%;
   animation: anim 2s;
 }
 
