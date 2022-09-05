@@ -23,6 +23,7 @@
 body{
   font-family: sans-serif;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 nav a{
@@ -622,10 +623,87 @@ button{
 }
 
 
+@media (max-width: 992px){
+  .aboutText .item .itemIcon{
+    display: none;
+  }
+  .section.about .item{
+    display: block;
+  }
+  .portfolioContent.container{
+    display: flex;
+    flex-direction: column;
+  }
+  .timeline{
+    left: 70%;
+    height: 200%
+  }
+  .portfolio{
+    height: 140rem;
+  }
 
-@media (min-width: 576px) {
+  .portfolioCard{
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 780px){
+  .aboutIntro{
+    display: block;
+  }
+
+}
+
+@media (max-width: 600px){
+  .aboutText .item .itemText{
+    font-size: 0.75rem;
+  }
   .container, .container-sm {
-    max-width: 540px;
+    max-width: 100vw;
+  }
+  .portfolioContent.container{
+    display: flex;
+    flex-direction: column;
+  }
+  .timeline{
+    display: none;
+  }
+  .portfolio{
+    height: 140rem;
+  }
+
+  .portfolioCard{
+    margin-bottom: 2rem;
+    width: auto;
+  }
+
+  .contactButtons{
+    flex-wrap: wrap;
+  }
+
+  .contactContent{
+    flex-direction: column;
+    gap: 40rem
+  }
+
+  .contactBack{
+    height: 90rem;
+  }
+}
+
+@media (min-width: 200px) {
+  .container, .container-sm, .container-md {
+    max-width: 300px;
+  }
+}
+@media (min-width: 400px) {
+  .container, .container-sm, .container-md {
+    max-width: 350px;
+  }
+}
+@media (min-width: 600px) {
+  .container, .container-sm, .container-md {
+    max-width: 550px;
   }
 }
 
@@ -639,6 +717,7 @@ button{
   .container, .container-sm, .container-md, .container-lg {
     max-width: 960px;
   }
+
 }
 
 @media (min-width: 1200px) {

@@ -159,6 +159,9 @@ const observer = new IntersectionObserver(entries => {
 });
 
 // Tell the observer which elements to track
+
+//if window is smaller than 600px no animations
+if ($(window).width() > 600) {
 observer.observe(document.querySelector('#personal'));
 observer.observe(document.querySelector('#interests'));
 observer.observe(document.querySelector('#projects'));
@@ -178,7 +181,7 @@ observer.observe(document.querySelector('#githubField'));
 observer.observe(document.querySelector('#discordField'));
 observer.observe(document.querySelector('#instaField'));
 observer.observe(document.querySelector('#linkedinField'));
-
+}
 
 
 function titleClick() {
