@@ -119,6 +119,17 @@ $("#portfolioCard4").mouseleave(function () {
   });
 })
 
+//Card5
+$("#portfolioCard5").mouseenter(function () {
+  $("#portfolioCard5").addClass("active");
+  $("#portfolioCard5 .cardBottom").stop().slideDown();
+})
+$("#portfolioCard5").mouseleave(function () {
+  $("#portfolioCard5 .cardBottom").slideUp(function () {
+    $("#portfolioCard5").removeClass("active");
+  });
+})
+
 
 // Observer for Cards
 const observer = new IntersectionObserver(entries => {
@@ -167,6 +178,7 @@ observer.observe(document.querySelector('#interests'));
 observer.observe(document.querySelector('#projects'));
 observer.observe(document.querySelector('#timelineID1'));
 observer.observe(document.querySelector('#timelineID2'));
+observer.observe(document.querySelector('#timelineID3'));
 observer.observe(document.querySelector('#profilePicID'));
 observer.observe(document.querySelector('#skillsCodingID'));
 observer.observe(document.querySelector('#skillsLanguagesID'));
@@ -177,6 +189,8 @@ observer.observe(document.querySelector('#portfolioCard1'));
 observer.observe(document.querySelector('#portfolioCard2'));
 observer.observe(document.querySelector('#portfolioCard3'));
 observer.observe(document.querySelector('#portfolioCard4'));
+observer.observe(document.querySelector('#portfolioCard5'));
+observer.observe(document.querySelector('#portfolioCard6'));
 observer.observe(document.querySelector('#githubField'));
 observer.observe(document.querySelector('#discordField'));
 observer.observe(document.querySelector('#instaField'));
