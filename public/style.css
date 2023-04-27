@@ -312,8 +312,7 @@ nav .active {
 
 .skillsCards {
   display: flex;
-  justify-content: center;
-  gap: 10rem;
+  justify-content: space-around;
   margin-bottom: 5rem;
 }
 
@@ -325,11 +324,12 @@ nav .active {
 
 .skillsCard {
   height: 20rem;
-  width: 15rem;
+  width: 14rem;
   background: rgb(255, 255, 255);
   color: black;
   border-radius: 20px;
   padding: 0rem 1rem;
+  font-size: 0.9rem;
 }
 
 .skillsLogo {
@@ -352,8 +352,8 @@ nav .active {
 }
 
 .skillsLogo img {
-  width: 7rem;
-  height: 7rem;
+  width: 6rem;
+  height: 6rem;
 }
 
 /*Porfolio Cards*/
