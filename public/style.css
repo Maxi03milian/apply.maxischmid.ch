@@ -313,6 +313,8 @@ nav .active {
 .skillsCards {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+
   margin-bottom: 5rem;
 }
 
@@ -330,6 +332,7 @@ nav .active {
   border-radius: 20px;
   padding: 0rem 1rem;
   font-size: 0.9rem;
+  margin-bottom: 2rem;
 }
 
 .skillsLogo {
@@ -625,11 +628,18 @@ button {
   .portfolioCard {
     margin-bottom: 2rem;
   }
+
+  .aboutSkillsBack {
+    height: 115rem;
+  }
 }
 
 @media (max-width: 780px) {
   .aboutIntro {
     display: block;
+  }
+  .aboutSkillsBack {
+    height: 165rem;
   }
 }
 
