@@ -1,4 +1,4 @@
-*{
+* {
   padding: 0px;
   margin: 0px;
 }
@@ -20,36 +20,36 @@
   --animate-delay: 0.5s;
 }
 
-body{
+body {
   font-family: sans-serif;
   min-height: 100vh;
   overflow-x: hidden;
 }
 
-nav a{
+nav a {
   text-decoration: none;
   color: white;
 }
 
-nav a:hover{
+nav a:hover {
   text-decoration: none;
   color: white;
 }
 
-nav li{
+nav li {
   list-style: none;
 }
 
-ul{
+ul {
   margin: 0px;
 }
 
-a{
+a {
   text-decoration: none;
   color: white;
 }
 
-nav{
+nav {
   width: 100%;
   position: fixed;
   min-height: 62px;
@@ -57,48 +57,50 @@ nav{
   z-index: 500;
 }
 
-nav .container{
+nav .container {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 62px;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-li{
+li {
   margin: 0px 10px;
   font-size: 17.5px;
   text-decoration: none;
   font-weight: 400;
 }
 
-.navTitle{
+.navTitle {
   font-size: 25px;
 }
 
-.navButs{
+.navButs {
   display: flex;
 }
 
-.nav-scrolling{
+.nav-scrolling {
   background-color: #fff;
   box-shadow: 0px 5px 15px -5px #00000070;
 }
 
-.but-scrolling{
+.but-scrolling {
   color: black;
 }
 
-.but-scrolling:hover{
+.but-scrolling:hover {
   color: black;
 }
 
-nav .active{
-  color: #00B16A;
+nav .active {
+  color: #00b16a;
 }
 
-.introduction{
+.introduction {
   background-image: url(./assets/overnature.net-863.jpg);
   height: 100vh;
   background-repeat: no-repeat;
@@ -111,7 +113,7 @@ nav .active{
   overflow: hidden;
 }
 
-.introductionTitle{
+.introductionTitle {
   color: white;
   display: flex;
   flex-direction: column;
@@ -122,9 +124,8 @@ nav .active{
   padding-left: 5rem;
   padding-right: 5rem;
   z-index: 2;
-  
 }
-.introductionTitleText{
+.introductionTitleText {
   color: white;
   font-family: sans-serif;
   font-size: 3.5rem;
@@ -135,7 +136,7 @@ nav .active{
   opacity: 1;
 }
 
-.introductionTitleTextSmall{
+.introductionTitleTextSmall {
   color: white;
   font-family: sans-serif;
   font-size: 1.5rem;
@@ -146,69 +147,69 @@ nav .active{
   opacity: 1;
 }
 
-.btncontainer{
+.btncontainer {
   display: none;
   margin-top: 40px;
 }
 
-.downloadBut{
-    display: inline-block;
-    font-weight: 700;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    border: 2px solid transparent;
-    padding: 0 32px;
-    font-size: 16px;
-    line-height: 48px;
-    width: auto;
-    color: #0067f4;
-    cursor: pointer;
-    z-index: 5;
-    position: relative;
-    text-transform: uppercase;
-    border-radius: 50px;
-    color: #fff;
-    background: #00B16A;
-    border: 2px solid #00B16A;
-    outline: none;
-    transition: all 0.25s ease;
-    text-decoration: none;
-  }
+.downloadBut {
+  display: inline-block;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 2px solid transparent;
+  padding: 0 32px;
+  font-size: 16px;
+  line-height: 48px;
+  width: auto;
+  color: #0067f4;
+  cursor: pointer;
+  z-index: 5;
+  position: relative;
+  text-transform: uppercase;
+  border-radius: 50px;
+  color: #fff;
+  background: #00b16a;
+  border: 2px solid #00b16a;
+  outline: none;
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
 
-  .downloadBut:hover{
-    background-color: #019a5d;
-    border: 2px solid #019a5d
-  }
+.downloadBut:hover {
+  background-color: #019a5d;
+  border: 2px solid #019a5d;
+}
 
-  .fa-chevron-down{
-    position: absolute;
-    bottom: 30px;
-    left: calc(50vw - 25px);
-    font-size: 50px;
-    color: white;
-  }
+.fa-chevron-down {
+  position: absolute;
+  bottom: 30px;
+  left: calc(50vw - 25px);
+  font-size: 50px;
+  color: white;
+}
 
 .section {
   padding: 100px 0 10px 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .heading::before {
-  content: '';
+  content: "";
   height: 10px;
   width: 50px;
   border-radius: 5px;
   margin-bottom: 20px;
   display: block;
-  background: #00B16A;
+  background: #00b16a;
 }
 
-.heading{
+.heading {
   margin-bottom: 2rem;
 }
 
@@ -226,13 +227,13 @@ nav .active{
   margin-top: 25px;
 }
 
-.aboutIntro{
+.aboutIntro {
   display: grid;
   grid-template-columns: 40% 57%;
   grid-column-gap: 2rem;
 }
 
-.profilePic{
+.profilePic {
   background-image: url(./assets/me.jpg);
   height: 30rem;
   background-repeat: no-repeat;
@@ -241,15 +242,15 @@ nav .active{
   margin-bottom: 4rem;
 }
 
-.section.about{
-  font-family: 'Raleway', sans-serif;
+.section.about {
+  font-family: "Raleway", sans-serif;
   padding-bottom: 0;
   margin-bottom: 0;
 }
 
 .section.about .icon {
   font-size: 50px;
-  color: #00B16A;
+  color: #00b16a;
   margin-bottom: 5px;
 }
 
@@ -258,11 +259,11 @@ nav .active{
   font-weight: 600;
 }
 
-.section.about .item{
+.section.about .item {
   display: grid;
   grid-template-columns: 25% 75%;
   grid-template-rows: 100%;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   background: #fff;
   text-align: center;
   padding: 15px 15px;
@@ -273,62 +274,60 @@ nav .active{
   margin-bottom: 30px;
 }
 
-.itemIcon{
+.itemIcon {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.itemText{
+.itemText {
   text-align: left;
 }
 
-.itemText p{
+.itemText p {
   margin-top: 1rem;
 }
 
-.aboutSkills{
+.aboutSkills {
   padding-top: 3rem;
   list-style: none;
   display: grid;
   grid-template-columns: auto auto;
   grid-column-gap: 2rem;
-  font-family: 'Raleway', sans-serif;
-
+  font-family: "Raleway", sans-serif;
 }
 
-.aboutSkillsBack{
+.aboutSkillsBack {
   background: url(./assets/background.webp);
   background-size: cover;
   background-attachment: fixed;
   padding: 40px 0 40px;
   margin: 15px 0;
   color: #fff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   position: relative;
   height: 15rem;
 }
 
-.aboutSkillsDark{
+.aboutSkillsDark {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   background: rgba(28, 29, 33, 0.8);
-  content: '';
+  content: "";
 }
 
-header .aboutSkillsDark{
+header .aboutSkillsDark {
   z-index: 1;
 }
 
-
-.aboutSkills li{
+.aboutSkills li {
   margin: 20px auto;
 }
 
-.bar{
+.bar {
   background: #a7adab;
   width: 90%;
   display: block;
@@ -338,63 +337,63 @@ header .aboutSkillsDark{
   overflow: hidden;
 }
 
-.bar span{
+.bar span {
   height: 3px;
   float: left;
-  background-color: #00B16A;
+  background-color: #00b16a;
 }
 
-.frontend{
+.frontend {
   width: 45%;
   animation: anim 2s;
 }
 
-.backend{
+.backend {
   width: 35%;
   animation: anim 2s;
 }
 
-.design{
+.design {
   width: 40%;
   animation: anim 2s;
 }
 
-.html{
+.html {
   width: 50%;
   animation: anim 2s;
 }
 
-.javascript{
+.javascript {
   width: 40%;
   animation: anim 2s;
 }
 
-.c{
+.c {
   width: 20%;
   animation: anim 2s;
 }
 
-.java{
+.java {
   width: 30%;
   animation: anim 2s;
 }
 
-@keyframes anim{
-  0%{
+@keyframes anim {
+  0% {
     width: 0%;
   }
 }
 
 /*Porfolio Cards*/
-.timeline{
+.timeline {
   position: absolute;
-  left: 50%; 
+  left: 50%;
   width: 0px;
   height: 470px;
   border: 1px solid black;
 }
 
-.timelineItem{
+.timelineItem {
   margin-left: -50px;
   margin-top: 210px;
   padding-top: 10px;
@@ -404,21 +403,19 @@ header .aboutSkillsDark{
   background-color: white;
 }
 
-
-.portfolio{
+.portfolio {
   height: 110rem;
 }
 
-.portfolioContent.container{
-display: flex;
-justify-content: space-around;
+.portfolioContent.container {
+  display: flex;
+  justify-content: space-around;
 }
-.portfolioContent{
+.portfolioContent {
   display: flex;
   justify-content: center;
-
 }
-.portfolioCard{
+.portfolioCard {
   position: relative;
   height: 470px;
   width: 340px;
@@ -429,7 +426,7 @@ justify-content: space-around;
   transition: all 0.4s linear;
 }
 
-.portfolioCardPlaceholder{
+.portfolioCardPlaceholder {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -437,31 +434,30 @@ justify-content: space-around;
   font-size: 40px;
 }
 
-
-.comingSoon{
+.comingSoon {
   text-align: center;
   margin-top: 60%;
   font-size: 30px;
 }
 
-.portfolioCard .image{
+.portfolioCard .image {
   background: black;
   height: 400px;
   overflow: hidden;
 }
 
-.image img{
+.image img {
   height: 100%;
   width: 100%;
-  transition: all 0.5s ;
+  transition: all 0.5s;
 }
 
-.portfolioCard:hover .image img{
+.portfolioCard:hover .image img {
   opacity: 0.6;
   transform: scale(1.1);
 }
 
-.portfolioCard .cardContent{
+.portfolioCard .cardContent {
   position: absolute;
   bottom: 0px;
   background: white;
@@ -471,19 +467,19 @@ justify-content: space-around;
   padding-bottom: 20px;
 }
 
-.cardContent .cardTitle{
+.cardContent .cardTitle {
   font-size: 24px;
   font-weight: 600;
   color: #333333;
 }
 
-.cardContent .cardSubTitle{
+.cardContent .cardSubTitle {
   font-size: 18px;
   margin-bottom: 10px;
-  color: #00B16A;
+  color: #00b16a;
 }
 
-.cardBottom p{
+.cardBottom p {
   padding: 0px 20px;
   color: #666666;
   font-size: 16px;
@@ -491,15 +487,15 @@ justify-content: space-around;
   line-height: 1.8em;
 }
 
-.cardBottom{
+.cardBottom {
   display: none;
 }
 
-.section.contact .heading > *{
+.section.contact .heading > * {
   color: #fff;
 }
 
-.contactBack{
+.contactBack {
   background: url(./assets/background.webp);
   background-size: cover;
   background-attachment: fixed;
@@ -507,13 +503,13 @@ justify-content: space-around;
   min-height: 90vh;
 }
 
-.aboutSkillsDark .heading{
+.aboutSkillsDark .heading {
   padding-top: 100px;
 }
 
 /*Contact*/
 
-.contactContent{
+.contactContent {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -524,7 +520,7 @@ justify-content: space-around;
   text-align: center;
 }
 
-.contactMe{
+.contactMe {
   width: 100%;
   height: 10rem;
   border-radius: 10px;
@@ -533,11 +529,11 @@ justify-content: space-around;
   text-align: center;
   margin-left: 0;
 }
-.contactMe h1{
+.contactMe h1 {
   font-size: 40px;
 }
 
-button{
+button {
   font-size: 1.5rem;
   padding: 1rem 3rem;
   color: #f4f4f4;
@@ -577,163 +573,177 @@ button{
   left: 100%;
 }
 
-.gearone{
+.gearone {
   font-size: 40px;
   animation: gearRotation 4s infinite linear;
   margin-right: -4px;
-
 }
 
-.contactButtons{
+.contactButtons {
   display: flex;
   justify-content: center;
   gap: 2rem;
 }
 
-.contactField{
+.contactField {
   width: 17rem;
   height: 12rem;
-  background: rgba(28, 29, 33, 0.0);
+  background: rgba(28, 29, 33, 0);
   border-radius: 8px;
   transition: all 0.25s linear;
 }
 
-.contactFieldSmall{
+.contactFieldSmall {
   width: 96px;
   height: 96px;
-  background: rgba(28, 29, 33, 0.0);
+  background: rgba(28, 29, 33, 0);
   border-radius: 8px;
   transition: all 0.25s linear;
 }
 
-.contactField:hover{
-  background: rgba(28, 29, 33, 0.8);
-
-}
-.contactFieldSmall:hover{
+.contactField:hover {
   background: rgba(28, 29, 33, 0.8);
 }
-
-@keyframes gearRotation{
-  from{  transform: rotateZ(0deg)   }
-  to  {  transform: rotateZ(360deg) }
+.contactFieldSmall:hover {
+  background: rgba(28, 29, 33, 0.8);
 }
 
-.gear2{
+@keyframes gearRotation {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.gear2 {
   font-size: 40px;
   animation: gearRotation2 4s infinite linear;
-
 }
 
-@keyframes gearRotation2{
-  from{  transform: rotateZ(390deg)   }
-  to  {  transform: rotateZ(30deg) }
+@keyframes gearRotation2 {
+  from {
+    transform: rotateZ(390deg);
+  }
+  to {
+    transform: rotateZ(30deg);
+  }
 }
 
-
-@media (max-width: 992px){
-  .aboutText .item .itemIcon{
+@media (max-width: 992px) {
+  .aboutText .item .itemIcon {
     display: none;
   }
-  .section.about .item{
+  .section.about .item {
     display: block;
   }
-  .portfolioContent.container{
+  .portfolioContent.container {
     display: flex;
     flex-direction: column;
   }
-  .timeline{
+  .timeline {
     left: 70%;
-    height: 200%
+    height: 200%;
   }
-  .portfolio{
+  .portfolio {
     height: 210rem;
   }
 
-  .portfolioCard{
+  .portfolioCard {
     margin-bottom: 2rem;
   }
 }
 
-@media (max-width: 780px){
-  .aboutIntro{
+@media (max-width: 780px) {
+  .aboutIntro {
     display: block;
   }
-
 }
 
-@media (max-width: 600px){
-  .aboutText .item .itemText{
+@media (max-width: 600px) {
+  .aboutText .item .itemText {
     font-size: 0.75rem;
   }
-  .container, .container-sm {
+  .container,
+  .container-sm {
     max-width: 100vw;
   }
-  .portfolioContent.container{
+  .portfolioContent.container {
     display: flex;
     flex-direction: column;
   }
-  .timeline{
+  .timeline {
     display: none;
   }
-  .portfolio{
+  .portfolio {
     height: 210rem;
   }
 
-  .portfolioCard{
+  .portfolioCard {
     margin-bottom: 2rem;
     width: auto;
   }
 
-  .contactButtons{
+  .contactButtons {
     flex-wrap: wrap;
   }
 
-  .contactContent{
+  .contactContent {
     flex-direction: column;
-    gap: 40rem
+    gap: 40rem;
   }
 
-  .contactBack{
+  .contactBack {
     height: 90rem;
   }
 }
 
 @media (min-width: 200px) {
-  .container, .container-sm, .container-md {
+  .container,
+  .container-sm,
+  .container-md {
     max-width: 300px;
   }
 }
 @media (min-width: 400px) {
-  .container, .container-sm, .container-md {
+  .container,
+  .container-sm,
+  .container-md {
     max-width: 350px;
   }
 }
 @media (min-width: 600px) {
-  .container, .container-sm, .container-md {
+  .container,
+  .container-sm,
+  .container-md {
     max-width: 550px;
   }
 }
 
 @media (min-width: 768px) {
-  .container, .container-sm, .container-md {
+  .container,
+  .container-sm,
+  .container-md {
     max-width: 720px;
   }
 }
 
 @media (min-width: 992px) {
-  .container, .container-sm, .container-md, .container-lg {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg {
     max-width: 960px;
   }
-
 }
 
 @media (min-width: 1200px) {
-  .container, .container-sm, .container-md, .container-lg, .container-xl {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl {
     max-width: 1140px;
   }
 }
-
-
-
-
