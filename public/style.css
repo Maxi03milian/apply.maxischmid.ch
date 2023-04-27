@@ -10,8 +10,6 @@
 .container-lg,
 .container-xl {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -289,11 +287,6 @@ nav .active {
 }
 
 .aboutSkills {
-  padding-top: 3rem;
-  list-style: none;
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-column-gap: 2rem;
   font-family: "Raleway", sans-serif;
 }
 
@@ -301,12 +294,10 @@ nav .active {
   background: url(./assets/background.webp);
   background-size: cover;
   background-attachment: fixed;
-  padding: 40px 0 40px;
-  margin: 15px 0;
   color: #fff;
   font-family: "Montserrat", sans-serif;
   position: relative;
-  height: 15rem;
+  height: 80rem;
 }
 
 .aboutSkillsDark {
@@ -319,69 +310,50 @@ nav .active {
   content: "";
 }
 
-header .aboutSkillsDark {
-  z-index: 1;
+.skillsCards {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  margin-bottom: 5rem;
 }
 
-.aboutSkills li {
-  margin: 20px auto;
+.skillsTopic {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
-.bar {
-  background: #a7adab;
-  width: 90%;
-  display: block;
-  height: 3px;
-  border: 0.25px solid black;
-  border-radius: 3;
-  overflow: hidden;
+.skillsCard {
+  height: 20rem;
+  width: 15rem;
+  background: rgb(255, 255, 255);
+  color: black;
+  border-radius: 20px;
+  padding: 0rem 1rem;
 }
 
-.bar span {
-  height: 3px;
-  float: left;
-  background-color: #00b16a;
+.skillsLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40%;
 }
 
-.frontend {
-  width: 45%;
-  animation: anim 2s;
+.skillsTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-family: "Montserrat", sans-serif;
 }
 
-.backend {
-  width: 35%;
-  animation: anim 2s;
+.skillsDesc {
+  text-align: center;
 }
 
-.design {
-  width: 40%;
-  animation: anim 2s;
-}
-
-.html {
-  width: 50%;
-  animation: anim 2s;
-}
-
-.javascript {
-  width: 40%;
-  animation: anim 2s;
-}
-
-.c {
-  width: 20%;
-  animation: anim 2s;
-}
-
-.java {
-  width: 30%;
-  animation: anim 2s;
-}
-
-@keyframes anim {
-  0% {
-    width: 0%;
-  }
+.skillsLogo img {
+  width: 7rem;
+  height: 7rem;
 }
 
 /*Porfolio Cards*/
