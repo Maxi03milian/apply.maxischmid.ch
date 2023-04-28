@@ -190,6 +190,8 @@ nav .active {
   left: calc(50vw - 25px);
   font-size: 50px;
   color: white;
+  cursor: pointer;
+  animation: arrowMovement infinite 2s;
 }
 
 .section {
@@ -604,6 +606,18 @@ button {
   }
   to {
     transform: rotateZ(30deg);
+  }
+}
+
+@keyframes arrowMovement {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
 
